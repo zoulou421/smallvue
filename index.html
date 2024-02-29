@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Vue 3 Basics</title>
+
+        <style>
+            .box{
+                background-color: purple;
+                height: 200px;
+                width: 200px;
+            }
+        </style>
+
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    </head>
+
+    <body>
+        <div id="app">
+            {{ greetings }}
+            <input v-model="greetings" />
+            <hr /> 
+          <div  class="box" v-show="isVisible">
+          <div  class="box" v-if>
+
+          </div>
+
+        </div> 
+
+        <script>
+          let app=Vue.createApp({
+            data:function(){
+                return{
+                    greetings:'Hello from Vue 3',
+                    isVisible:true
+                }
+            }
+          })
+          app.mount("#app");
+        </script>
+
+    </body>
+</html>
