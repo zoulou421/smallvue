@@ -7,12 +7,7 @@ let PlanComponent={
     }
 }
 
-
-const app = Vue.createApp({
-   
-})
-
-.component('plan-picker',{
+let PlanpickerComponent={
     components:{
         plan:PlanComponent
     },
@@ -23,5 +18,10 @@ const app = Vue.createApp({
         }
     },
    
+}
+const app = Vue.createApp({
+   components:{
+    'plan-picker':PlanpickerComponent
+   }
 })
 .mount('#app')
