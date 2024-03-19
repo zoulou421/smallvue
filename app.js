@@ -8,7 +8,7 @@ const app = Vue.createApp({
 .component('plan',{
     template:'#plan-template',
     props:{
-        name: String,
+        name: {type:String, default:"Default Value",required:true},
         price: Number
     }
 })
