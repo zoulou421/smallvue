@@ -12,9 +12,7 @@
   <div id="app" class="container mx-auto py-6">
      
       <div class="plans">
-        <plan name="The Single"></plan>
-        <plan name=" The Curious"></plan>
-        <plan name="The Addict"></plan>
+        <plan v-for="plan in plans" :name="plan"></plan>
       </div>
     </div>
   </div>
